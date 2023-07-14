@@ -88,6 +88,11 @@ input:not(input[type="checkbox"]) {
   border: none;
   margin-left: auto;
 }
+.button {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 123px;
+}
 .item {
   display: flex;
   margin-top: 20px;
@@ -163,4 +168,29 @@ del {
 .shipping {
   margin-top: 15px;
   margin-bottom: 10px;
+}
+
+.input-icon {
+  position: relative;
+}
+.input-icon i {
+  position: absolute;
+  left: 20px;
+  top: 40px;
+  color: #999;
+}
+
+@media screen and (max-width: 576px) {
+  .flex {
+    flex-direction: column-reverse;
+  }
+  .form-container {
+    margin: 10px;
+    width: 100%;
+  }
+  input:not(input[type="checkbox"]) {
+    width: 70%;
+  }
+  .items-cart {
+  }
 }
